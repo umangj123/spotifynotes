@@ -516,6 +516,11 @@ const saveNote = async (songId, songName, note, spotifyUser) => {
 
   return (
     <div className="spotify-container">
+        <nav>
+        <button onClick={() => navigate('/feed')} className="back-to-feed-button">
+          Back to Feed
+        </button>
+      </nav>
       <div className="profile-section">
         <img src={profile?.images[0]?.url} alt="Profile" className="profile-pic" />
         <h2>Welcome, {profile?.display_name}</h2>
