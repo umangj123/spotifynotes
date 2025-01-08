@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Spotify Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1">Spotify Profile Viewer</h1>
+    </header>
+
+    <main>
+        <section id="profile">
+            <button id="go-to-feed">Go to Feed</button>
+            <button id="logout-button">Logout</button>
+            <h2>Logged in as <span id="displayName"></span></h2>
+            <div id="avatar"></div>
+            <ul>
+                <li><strong>User ID:</strong> <span id="id"></span></li>
+                <li><strong>Email:</strong> <span id="email"></span></li>
+                <li><strong>Spotify URI:</strong> <a id="uri" href="#" target="_blank"></a></li>
+                <li><strong>Link:</strong> <a id="url" href="#" target="_blank"></a></li>
+                <li><strong>Profile Image URL:</strong> <span id="imgUrl"></span></li>
+            </ul>
+            <button id="fetchPlaylists">Fetch Playlists</button>
+        </section>
+
+        <section id="playlists" style="display: none;">
+
+        </section>
+
+        <section id="playlistDetails" style="display: none;">
+
+        </section>
+        <section id="tracks" style="display: none;"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Spotify Profile Viewer</p>
+    </footer>
+</body>
+</html>
+
